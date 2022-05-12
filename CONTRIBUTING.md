@@ -1,3 +1,5 @@
+# あくまでtemplateです。本templateをもとに各repositoryでContributionのruleを作ってください。
+
 # Contribution Guide
 
 活動するにあたり、commitの精度が人によってまちまちになるのを防ぐための指針です。
