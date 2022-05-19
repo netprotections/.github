@@ -4,10 +4,30 @@
 
 活動するにあたり、commitの精度が人によってまちまちになるのを防ぐための指針です。
 
+```mermaid
+  %%{init: { 'gitGraph': {'mainBranchName': 'main','showCommitLabel': false}} }%%
+  gitGraph
+      commit tag:"v1.0.0" type:REVERSE
+      branch featureA
+      commit
+      checkout main
+      branch hotfix
+      commit
+      commit type: HIGHLIGHT
+      checkout main
+      merge hotfix
+      commit tag:"v1.0.1"
+      checkout featureA
+      merge hotfix
+      commit type: HIGHLIGHT
+      checkout main
+      merge featureA
+      commit tag:"v1.1.0"
+```
+
 ## documentの修正
 
 Issueの追加は任意です。
-
 - 手順書
   - ******に記載します
 - 要件・仕様
