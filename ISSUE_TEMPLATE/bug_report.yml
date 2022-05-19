@@ -1,0 +1,72 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - inteltank
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Bug(‰ªïÊßòÈÄö„Çä„Å´Âãï„Åã„Å™„ÅÑ‰∫ãË±°)„ÅÆÂ†±Âëä„ÄÅË™†„Å´„ÅÇ„Çä„Åå„Å®„ÅÜ„Åî„Åñ„ÅÑ„Åæ„Åô„ÄÇ
+        ÂéüÂõ†Ë™øÊüª„ÅÆ„Åü„ÇÅ„Å´‰ª•‰∏ã2ÁÇπ„ÇíForm„ÅßÂÖ•Âäõ„Åó„Å¶„ÅÑ„Å£„Å¶„Åè„Å†„Åï„ÅÑ„ÄÇ
+        - Bug„ÅÆÊ¶ÇË¶Å
+        - Bug„ÅåËµ∑„Åì„Å£„ÅüÁí∞Â¢É
+  - type: input
+    id: contact
+    attributes:
+      label: StakeHolders
+      description: Ë©≥Á¥∞„ÅÆÁ¢∫Ë™ç„Çíissue‰ΩúÊàêËÄÖ‰ª•Â§ñ„Å´„Åó„Åü„Åª„ÅÜ„ÅåËâØ„ÅÑÂ†¥Âêà„ÅØÊòéË®ò„Åè„Å†„Åï„ÅÑ
+      placeholder: ex. issueËµ∑Ê°àËÄÖ„ÄÅtsawada„ÄÅmmurata
+    validations:
+      required: false
+  # ------------------------------
+  # Bug Details Section
+  # ------------------------------
+  - type: markdown
+    attributes:
+      value: >
+        # (1/2) Bug Details (Bug„ÅÆÊ¶ÇË¶Å)
+        „Åì„ÅÆSection„Åß„ÅØ„ÄåÂéüÂõ†Ë™øÊüª„Äç„ÅÆ„Åü„ÇÅ„Å´ÂøÖË¶Å„Å™BugÈñ¢ÈÄ£„ÅÆÊÉÖÂ†±„ÇíÂèéÈõÜ„Åó„Åæ„Åô„ÄÇ
+
+        „Å©„Çì„Å™Bug(‰ªïÊßòÈÄö„Çä„Åß„Å™„ÅÑ„Å®ÊÄù„Çè„Çå„Çã‰∫ãË±°)„ÅåËµ∑„Åì„Å£„Åü„Åã„ÄÅÊòéË®ò„Åè„Å†„Åï„ÅÑ„ÄÇ
+        ‰ª•‰∏ãFormat„Åå„Åä„Åô„Åô„ÇÅ„Åß„Åô„ÄÇ
+        - ÊúüÂæÖ„Åó„ÅüsystemÊåôÂãï
+          - ÂèÇËÄÉË≥áÊñô„Åå„ÅÇ„Çå„Å∞Ê∑ª‰ªò„Åè„Å†„Åï„ÅÑ
+        - ÂÆüÈöõ„ÅÆsystemÊåôÂãï
+          - ÊåôÂãï„Åå„Çè„Åã„ÇãË≥áÊñô(Áâπ„Å´Gif animation)„Åå„ÅÇ„Çå„Å∞„ÄÅÊ∑ª‰ªò„Åè„Å†„Åï„ÅÑ
+  - type: textarea
+    id: expected-performance
+    attributes:
+      label: ÊúüÂæÖ„Åó„ÅüSystemÊåôÂãï
+      placeholder: >
+        - ÊúüÂæÖ„Åó„ÅüsystemÊåôÂãï
+          - ÂèÇËÄÉË≥áÊñô„Åå„ÅÇ„Çå„Å∞Ê∑ª‰ªò„Åè„Å†„Åï„ÅÑ
+    validations:
+      required: true
+  - type: textarea
+    id: actually-performance
+    attributes:
+      label: ÂÆüÈöõ„ÅÆSystemÊåôÂãï
+      placeholder: >
+        - ÂÆüÈöõ„ÅÆsystemÊåôÂãï
+          - ÊåôÂãï„Åå„Çè„Åã„ÇãË≥áÊñô(Áâπ„Å´Gif animation)„Åå„ÅÇ„Çå„Å∞„ÄÅÊ∑ª‰ªò„Åè„Å†„Åï„ÅÑ
+    validations:
+      required: true
+  # ------------------------------
+  # Environment Section
+  # ------------------------------
+  - type: markdown
+    attributes:
+      value: >
+        # (2/2) Environment (Bug„ÅåÁô∫Áîü„Åó„ÅüÁí∞Â¢É)
+        „Åì„ÅÆSection„Åß„ÅØ„ÄåÂéüÂõ†Ë™øÊüª„Äç„ÅÆ„Åü„ÇÅ„Å´ÂøÖË¶Å„Å™Bug„ÅåËµ∑„Åì„Å£„ÅüÁí∞Â¢É„ÅÆÊÉÖÂ†±„ÇíÂèéÈõÜ„Åó„Åæ„Åô„ÄÇ
+
+        „Å©„Çì„Å™Áí∞Â¢É„ÅßËµ∑„Åì„Å£„Åü„Åã„ÄÅÊòéË®ò„Åè„Å†„Åï„ÅÑ„ÄÇ
+  - type: textarea
+    id: environment
+    attributes:
+      label: ÂÆüË°å„Åó„ÅüÁí∞Â¢É
+    validations:
+      required: true
+
